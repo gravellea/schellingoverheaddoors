@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/utilities.css" class="stylesheet">
+    <link rel="stylesheet" href="css/style.css" class="stylesheet">
+    <link rel="icon" href="/images/logo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Schelling Overhead Doors</title>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <!--Navbar-->
+    <div class="navbar">
+        <div class="container flex">
+           <img src="/images/logo.png" alt="Schelling Overhead Doors Logo" class="logo" height="100px" width="100px">
+            <!-- Hamburger / Mobile toggle -->
+            <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav>
+                <ul id="primary-navigation" class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="doors.html">Garage Doors</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                    <li class="phone"><h3><i class="fa fa-phone"></i> 518-965-6502</h3></li>
+                </ul>    
+            </nav>
+        </div>
+    </div>
+
+    <!--Showcase-->
+    <section class="showcase">
+        <div class="container grid">
+            <div class="showcase-text">
+                <h1>Schelling Overhead Doors <br>518-965-6502</h1>
+                <h2>Serving Upstate New York's Capital District Area</h2>
+                <p>At Schelling Overhead Doors, we provide top-quality overhead door solutions for residential and commercial properties. Our expert team is dedicated to delivering exceptional service and reliable products to meet your needs.</p>
+                <a class="btn btn-outline" href="doors.html">Browse Options</a>
+            </div>
+            <div class="showcase-form card">
+                <h2>Request a Quote</h2>
+                <form action="/submit_form" method="post">
+                    <div class="form-control">
+                        
+                        <input type="text" id="name" placeholder="Name" required autocomplete="name">
+                    </div>
+                    <div class="form-control">
+                        
+                        <input type="email" id="email" placeholder="Email" required autocomplete="email">
+                    </div>
+                    <div class="form-control">
+                       
+                        <input type="tel" id="phone" placeholder="Phone Number" required autocomplete="tel">
+                    </div>
+                    <div class="form-control">
+                        <textarea type="text" id="message" placeholder="How can we help you?" rows="4"></textarea>
+                    </div>
+                    <button type="submit" value="Send" class="btn btn-primary">Submit</button>
+                    <button type="reset" class="btn btn-secondary">Reset</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Gallery -->
+    <section class="gallery-section">
+        <div class="container">
+            <h2 class="text-center">Some Previous Installations</h2>
+            <div class="image-gallery">
+                <div class="gallery-item">
+                    <img src="/images/install/2 brown garage.jpg" alt="Door Installation 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="/images/install/glass doors.jpg" alt="Door Installation 2">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/install/light brown.jpg" alt="Door Installation 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/install/3 brown garage.jpg" alt="Door Installation 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/install/2 white doors.jpg" alt="Door Installation 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/install/single brown door.jpg" alt="Door Installation 6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" id="lightbox-img" src="" alt="Enlarged image">
+    </div>
+
+    <!--Frequently Asked Questions-->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="text-center">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Should I replace my whole garage door system or just the panels?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The decision depends on several factors. If your door is over 15 years old or the track system is damaged, a full replacement is recommended. However, if only the panels are damaged and your door system is relatively new, panel replacement might be more cost-effective.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How often should I service my garage door?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We recommend professional servicing at least once a year to ensure safe and reliable operation. However, if you use your door frequently or notice any unusual sounds or movements, more frequent inspections may be necessary.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What maintenance can I do myself?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can perform basic maintenance like visual inspections, cleaning tracks, and lubricating moving parts. However, leave spring adjustments and electrical work to professionals as these can be dangerous.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How long does installation typically take?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>A standard garage door installation typically takes 4-6 hours. However, custom installations or removing old doors may require additional time. We'll provide a specific timeframe during your consultation.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you offer warranty coverage?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer comprehensive warranty coverage on both parts and labor. Our doors come with manufacturer warranties, and we provide additional coverage on our installation work. Specific terms vary by product.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Testimonials-->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="text-center">What Our Customers Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-item card">
+                    <p>"Extremely pleased from start to finish. A large selection of products, excellent response, no hidden costs, and high level craftsmanship.  Look of the garage was transformed. Highly recommend them."</p>
+                    <h4>- Mary B.</h4>
+                </div>
+                <div class="testimonial-item card">
+                    <p>"Scott and team are true professionals! I highly recommend them, from start to finish an excellent job"</p>
+                    <h4>- Timothy D.</h4>
+                </div>
+                <div class="testimonial-item card">
+                    <p>"Excellent service! Quality work and AWESOME prices!! Thank you Schelling brother’s overhead doors"</p>
+                    <h4>- John W.</h4>
+                </div>
+                <div class="testimonial-item card">
+                    <p>"Another satisfied customer if you need garage doors give Schelling Brothers overhead doors a call"</p>
+                    <h4>- Dan H.</h4>
+                </div>
+                <div class="testimonial-item card">
+                    <p>"Excellent service done expediently. Our new doors look great. I would definitely recommend them to anyone that needs garage doors."</p>
+                    <h4>- Paul M.</h4>
+                </div>
+                <div class="testimonial-item card">
+                    <p>"We had two new doors and openers installed. The finished product was far better than I imagined. They were on time, fast and took care of every single little detail....helped me program my car and get the app set up too! We couldn’t have asked for better product and service. Thank you guys so much!"</p>
+                    <h4>- Stacey A.</h4>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="clopay-section">
+        <div class="container">
+            <h2 class="text-center">Proudly Featuring Clopay Garage Doors</h2>
+            <div class="clopay-logos">
+                <div class="clopay-logo-item">
+                    <img src="/images/clopay/clopay-logo2x.jpg" alt="Clopay Logo 1">
+                </div>
+                <div class="clopay-logo-item">
+                    <img src="/images/clopay/master-authorized-dealer.png" alt="Clopay Logo 2">
+                </div>
+                <div class="clopay-logo-item">
+                    <img src="/images/clopay/one-year-installation-warranty.png" alt="Clopay Logo 3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+   <footer class="footer bg-primary py-5">
+        <div class="footer-content container">
+            <div class="footer-left">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="doors.html">Garage Doors</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                    </ul>
+                </nav>
+                <div class="social">
+                    <a href="https://www.facebook.com/schellingoverheaddoors"><i class="fab fa-facebook-f"></i></a>
+
+                </div>
+                <p>&copy; 2025 Schelling Overhead Doors. All rights reserved.</p>
+                <p> Phone: 518-965-6502 | email: sschelling54@gmail.com</p>
+            </div>
+            <div class="footer-right">
+                <img src="/images/logo.png" alt="Schelling Overhead Doors Logo" class="footer-logo" width="150" height="150">
+            </div>
+        </div>
+    </footer>      
+
+
+
+</body>
+</html>
