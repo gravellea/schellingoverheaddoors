@@ -142,9 +142,9 @@ img{
         flex-direction: column;
         /* position fixed so the menu is in its own stacking context and can sit above other elements */
         position: fixed;
-        top: 130px; /* place below the fixed navbar (navbar height = 130px) */
+        top: 160px; /* place below the fixed navbar (navbar height = 130px) */
         right: 20px;
-        background: var(--dark-color);
+        background: black;
         width: 260px;
         max-height: 0;
         overflow: hidden;
