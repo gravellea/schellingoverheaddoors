@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="css/utilities.css" class="stylesheet">
     <link rel="stylesheet" href="css/style.css" class="stylesheet">
     <link rel="icon" href="images/logo.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Contact</title>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
     <script src="js/script.js" defer></script>
 </head>
 <body>
@@ -26,7 +28,7 @@
                     <li><a href="services.html">Services</a></li>
                     <li><a href="contact.html">Contact</a></li>
 
-                    <li class="phone"><h3><i class="fa fa-phone"></i> 518-965-6502</h3></li>
+                    <li class="phone"><h3><i class="fa fa-phone"></i> <a href="tel:5189656502">518-965-6502</a></h3></li>
                 </ul>    
             </nav>
         </div>
@@ -38,7 +40,7 @@
             <div class="hero">Contact Us<br>
             </div>
             <div class="container">
-                <p>If you have any questions, need assistance, or would like to schedule a service, please don't hesitate to reach out to us. Our friendly and knowledgeable team at Schelling Overhead Doors is here to help you with all your garage door needs.</p>
+                <p>If you have any questions, need assistance, or would like to schedule a service, please don't hesitate to reach out to us. Our friendly and knowledgeable team at Schelling Overhead Doors is here to help you with all your garage door needs.  With 15 years of experience, we provide top quality work at fair prices.</p>
                 <h3 class="text-center">Contact Information:</h3>
                 <ul class="text-center">
                     <li><strong>Phone:</strong> 518-965-6502</li>
@@ -53,7 +55,14 @@
                 
                 <div class="contact-form">
                     <h2>Request a Quote</h2>
-                    <form action="/submit_form" method="post">
+                    <form action="https://api.web3forms.com/submit" method="post" class="protected-form">
+                        <input type="hidden" name="access_key" value="5afa5b55-ea24-4fb8-ad08-736e1916952c">
+                        <!-- Anti-bot: hidden honeypot and form start timestamp -->
+                        <input type="text" name="website" class="honeypot" autocomplete="off" tabindex="-1" style="display:none !important;" aria-hidden="true">
+                        <input type="hidden" name="formStart" value="">
+                        <!-- JS will enable submit button and add `jsEnabled` before submit -->
+                        <!-- Cloudflare Turnstile widget: replace with your site key -->
+                        
                         <div class="form-control">
                             <input type="text" id="name" placeholder="Name" required autocomplete="name">
                         </div>
@@ -66,8 +75,9 @@
                         <div class="form-control">
                             <textarea id="message" name="message" placeholder="How can we help you?" rows="4"></textarea>
                         </div>
+                        <div class="cf-turnstile" data-sitekey="0x4AAAAAACFDDgrQ8XeWPul_"></div>
                         <div class="form-buttons" text-align="center">
-                            <button type="submit" value="Send" class="btn btn-primary">Submit</button>
+                            <button type="submit" value="Send" class="btn btn-primary" disabled>Submit</button>
                             <button type="reset" class="btn btn-secondary">Reset</button>
                         </div>
                     </form>

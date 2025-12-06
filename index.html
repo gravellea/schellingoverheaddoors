@@ -3,11 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fast garage door installation, repair, spring replacement and new installation.  Serving Green County and New York Capital District since 2010.  Licensed, insured and top rated.  Call 518-965-6502 for a quote">
+    <meta name="keywords" content="garage door, garage door repair, garage door installation, garage door spring replacement, garage door opener, Liftmaster, Clopay, Greene County, Albany County, Rensselaer County, Schenectady County, New York, Capital District, Saratoga County, New York, Dutchess County, New York, Ulster County, New York">
+    <!--Open Graph for social media sharing-->
+    <meta property="og:title" content="Contact Schelling Overhead Doors - Garage Door Services in Upstate NY">
+    <meta property="og:description" content="Get in touch with Schelling Overhead Doors for all your garage door needs throughout the Capital District. Call 518-965-6502 or email schellingoverheaddoors@gmail.com">
+    <meta property="og:image" content="https://www.schellingoverheaddoors.com/images/logo.png">
+    <meta property="og:url" content="https://www.schellingoverheaddoors.com">
     <link rel="stylesheet" href="css/utilities.css" class="stylesheet">
     <link rel="stylesheet" href="css/style.css" class="stylesheet">
     <link rel="icon" href="images/logo.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Schelling Overhead Doors</title>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
     <script src="js/script.js" defer></script>
 </head>
 <body>
@@ -26,7 +34,7 @@
                     <li><a href="services.html">Services</a></li>
                     <li><a href="contact.html">Contact</a></li>
 
-                    <li class="phone"><h3><i class="fa fa-phone"></i> 518-965-6502</h3></li>
+                    <li class="phone"><h3><i class="fa fa-phone"></i> <a href="tel:5189656502">518-965-6502</a></h3></li>
                 </ul>    
             </nav>
         </div>
@@ -43,7 +51,11 @@
             </div>
             <div class="showcase-form card">
                 <h2>Request a Quote</h2>
-                <form action="/submit_form" method="post">
+                <form action="https://api.web3forms.com/submit" method="post" class="protected-form">
+                    <input type="hidden" name="access_key" value="5afa5b55-ea24-4fb8-ad08-736e1916952c">
+                    <!-- Anti-bot: hidden honeypot and form start timestamp -->
+                    <input type="text" name="website" class="honeypot" autocomplete="off" tabindex="-1" style="display:none !important;" aria-hidden="true">
+                    <input type="hidden" name="formStart" value="">
                     <div class="form-control">
                         
                         <input type="text" id="name" placeholder="Name" required autocomplete="name">
@@ -59,8 +71,11 @@
                     <div class="form-control">
                         <textarea type="text" id="message" placeholder="How can we help you?" rows="4"></textarea>
                     </div>
-                    <button type="submit" value="Send" class="btn btn-primary">Submit</button>
+                    <div class="cf-turnstile" data-sitekey="0x4AAAAAACFDDgrQ8XeWPul_"></div>
+                    <div class="form-buttons" text-align="center">
+                    <button type="submit" value="Send" class="btn btn-primary" disabled>Submit</button>
                     <button type="reset" class="btn btn-secondary">Reset</button>
+                    </div>
                 </form>
             </div>
         </div>
@@ -220,6 +235,7 @@
                 </div>
                 <p>&copy; 2025 Schelling Overhead Doors. All rights reserved.</p>
                 <p> Phone: 518-965-6502 | email: schellingoverheaddoors@gmail.com</p>
+                <p>We do not share any of your information</p>
             </div>
             <div class="footer-right">
                 <img src="images/logo.png" alt="Schelling Overhead Doors Logo" class="footer-logo" width="150" height="150">
